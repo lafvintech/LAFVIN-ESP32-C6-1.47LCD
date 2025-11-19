@@ -11,17 +11,13 @@
 - 内存卡 x1
 - 读卡器 x1
 
-你收到产品之后可以使用附带的typec数据线通电插入esp32c6模块的typec口,正常情况下产品会自动亮起并显示Onboard Info界面
+你收到产品之后可以使用附带的typec数据线通电插入esp32c6模块的typec口,正常情况下产品会自动亮起并显示下面所示的Onboard Info界面
 
-.. .. image:: ./img/LB006-1.jpg 暂时空
-
-如果你会看到Onboard Info这个界面,说明烧录成功硬件没有问题
-
-.. image:: img/demo1-2.png
+.. image:: img/demo1-4.png
 
 如果没有自动亮起,你需要先根据这一章下载代码固件和烧录工具
 
-:ref:`download_code1 <download_code>` 
+:ref:`Download Code <download_code>` 
 
 然后根据下面的步骤烧录代码到设备上
 
@@ -37,18 +33,17 @@ Firmware Upload(windows)
 
     B.In the address input box after the bin file selection box, enter 0 or 0x0 (indicating that the firmware will be downloaded to the starting position of the development board’s memory)
 
-    C.Select the COM port corresponding to ESP32-S3 from the port selection dropdown menu (使用windows的设备管理器查看)
+    C.Select the COM port corresponding to ESP32-C6 from the port selection dropdown menu (Use windows device manager to view)
 
-    D.Set the baud rate (we use 465800 here)
+    D.Set the baud rate (we use 115200 here)
 
-    E.Click the “START” button to begin downloading the firmware to the ESP32-S3 development board
+    E.Click the “START” button to begin downloading the firmware to the ESP32-C6 development board
 
 .. image:: img/flashtool2.png
 
 3.固件烧录完成之后你会看到Onboard Info这个界面,说明烧录成功了
 
 .. image:: img/demo1-4.png
-
 
 你可以插入将SD Card File文件夹中的图片复制到内存卡中,然后插入内存卡,之后ESP32-C6-LCD-1.47开发板会自动读取内存卡中的图片并在屏幕上轮播
 
