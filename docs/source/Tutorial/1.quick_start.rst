@@ -21,7 +21,7 @@
 
 如果没有自动亮起,你需要先根据这一章下载代码固件和烧录工具
 
-:ref:`download_code <download_code>` 
+:ref:`download_code1 <download_code>` 
 
 然后根据下面的步骤烧录代码到设备上
 
