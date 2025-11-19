@@ -1,58 +1,58 @@
 .. _assembly_tutorial:
 
-1.Quick Start Guide
+1. Quick Start Guide
 ====================
-本章节将带领你快速开始使用ESP32-C6-LCD-1.47开发板.
+This chapter will guide you to quickly get started with the ESP32-C6-LCD-1.47 development board.
 
-我们需要准备以下工具:
+You need to prepare the following tools:
 
-- ESP32-C6-LCD-1.47开发板
-- typec数据线 x1
-- 内存卡 x1
-- 读卡器 x1
+- ESP32-C6-LCD-1.47 development board
+- Type-C data cable x1
+- Memory card x1
+- Card reader x1
 
-你收到产品之后可以使用附带的typec数据线通电插入esp32c6模块的typec口,正常情况下产品会自动亮起并显示下面所示的Onboard Info界面
+After receiving the product, you can use the included type-C cable to power on by inserting it into the ESP32-C6 module's type-C port. Normally, the product will automatically light up and display the Onboard Info interface as shown below.
 
 .. image:: img/demo1-4.png
 
-如果没有自动亮起,你需要先根据这一章下载代码固件和烧录工具
+If it does not light up automatically, you need to download the firmware and flashing tool according to this chapter.
 
 :ref:`Download Code <download_code>` 
 
-然后根据下面的步骤烧录代码到设备上
+Then follow the steps below to flash the code to the device.
 
-Firmware Upload(windows)
+Firmware Upload (Windows)
 ----------------------------
-1.Double-click to open Flash Download Tools, then select the options as shown below:
+1. Double-click to open Flash Download Tools, then select the options as shown below:
 
 .. image:: img/flashtool1.png
 
-2.Follow these steps to upload the firmware:
+2. Follow these steps to upload the firmware:
 
-    A.Click the “Select File” button to choose your downloaded firmware file (.bin format)
-
-    B.In the address input box after the bin file selection box, enter 0 or 0x0 (indicating that the firmware will be downloaded to the starting position of the development board’s memory)
-
-    C.Select the COM port corresponding to ESP32-C6 from the port selection dropdown menu (Use windows device manager to view)
-
-    D.Set the baud rate (we use 115200 here)
-
-    E.Click the “START” button to begin downloading the firmware to the ESP32-C6 development board
+    A. Click the “Select File” button to choose your downloaded firmware file (.bin format)
+    
+    B. In the address input box after the bin file selection box, enter 0 or 0x0 (this means the firmware will be downloaded to the starting position of the development board’s memory)
+    
+    C. Select the COM port corresponding to ESP32-C6 from the port selection dropdown menu (you can check it in Windows Device Manager)
+    
+    D. Set the baud rate (we use 115200 here)
+    
+    E. Click the “START” button to begin downloading the firmware to the ESP32-C6 development board
 
 .. image:: img/flashtool2.png
 
-3.固件烧录完成之后你会看到Onboard Info这个界面,说明烧录成功了
+3. After the firmware upload is complete, you will see the Onboard Info interface, indicating that the flashing was successful.
 
 .. image:: img/demo1-4.png
 
-你可以插入将SD Card File文件夹中的图片复制到内存卡中,然后插入内存卡,之后ESP32-C6-LCD-1.47开发板会自动读取内存卡中的图片并在屏幕上轮播
+You can copy the pictures in the SD Card File folder to the memory card, then insert the card. After pressing the RST button to restart, the ESP32-C6-LCD-1.47 development board will automatically read the pictures and display them in a slideshow on the screen.
 
 .. image:: img/pic1.jpg
 
-然后按下boot键,会切换到LVGL界面,在这个界面你可以看到内存卡的容量,FLash的大小,运行时间,还有扫描的蓝牙和wifi ap的数量
+Then press the boot button to switch to the LVGL interface. In this interface, you can see the capacity of the memory card, the size of the Flash, the run time, as well as the number of scanned Bluetooth and WiFi APs.
 
 .. image:: img/pic4.jpg
 
-如果你没有windows电脑,只有macos或者linux的电脑,你可以参考下面的教程
+If you do not have a Windows computer, but only have a macOS or Linux computer, you can refer to the following tutorial:
 
 :ref:`macos_upload <macos_upload>` 
