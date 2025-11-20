@@ -222,8 +222,8 @@ void ST7789Display::initRegisters() {
  */
 void ST7789Display::backlightInit() {
     ledcAttach(_pin_backlight, _backlight_freq, _backlight_resolution);
-    // Default to 10% brightness (consistent with original code)
-    // 10-bit PWM: 10% = 100/1000 (default value in original code)
+    // Default to 10% brightness
+    // 10-bit PWM: 10% = 100/1000
     ledcWrite(_pin_backlight, 100); // 100 here is the 10% PWM value
 }
 
@@ -329,7 +329,6 @@ void ST7789Display::setBacklight(uint8_t brightness) {
     
     // Use simple formula: brightness * 10
     // Map percentage 0-100 to PWM value 0-1000 (10-bit PWM max 1024)
-    // Consistent with original code
     uint32_t duty = brightness * 10;
     ledcWrite(_pin_backlight, duty);
 }
