@@ -8,7 +8,7 @@ Product Introduction
 ESP32-C6-LCD-1.47
 ------------------
 
-.. figure:: ./Tutorial/img/主图.jpg
+.. figure:: Tutorial/img/主图.jpg
    :align: center
 
 Introduction
