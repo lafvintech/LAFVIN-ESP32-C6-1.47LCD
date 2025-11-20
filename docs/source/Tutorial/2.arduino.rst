@@ -3,19 +3,21 @@
 
 First, in this section, we need to download the Arduino IDE. You can follow the steps in the section below to install it.
 
-:ref:`install_arduino_ide <install_arduino_ide>`
+:ref:`Install Arduino IDE <install_arduino_ide>`
 
-After installing Arduino IDE and configuring the ESP32 library according to this tutorial, we can install the libraries required for this project.
+After installing Arduino IDE and configuring the ESP32 board package according to this tutorial, we can install the libraries required for this project.
 
 Installing Project Libraries
 -----------------------------
 You can install the libraries in Arduino by yourself. We also provide related offline zip files. After downloading the code, you can find these two library files in the libraries folder.
 
+.. image:: img/lib.png
+
 You need to open Arduino ‣ Sketch ‣ Include library ‣ Add .zip Library.
 
 .. image:: img/add_ziplib.png
 
-Then in the pop-up window, select our offline library files and click install. After that, you can start compiling our project.
+Then in the pop-up window, select each of our offline library files one by one and click install. You may need to perform this process three times to install all the libraries. After that, you can start compiling our project.
 
 Compile Arduino Project
 -----------------------
@@ -29,9 +31,11 @@ We also need to adjust the partition table: Click Tools in the upper left corner
 
 .. image:: img/demo1-3.png
 
-After configuration, click the right arrow button in the upper left corner to start compiling and uploading (this project uses LVGL, which may take a long time, so please be patient).
+After configuration, click the right arrow button in the upper left corner to start compiling and uploading.
 
 .. image:: img/demo1-2.png
+
+.. attention::  all project uses LVGL, which may take a long time, so please be patient
 
 LVGL_Arduino
 ----------------

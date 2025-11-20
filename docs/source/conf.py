@@ -20,7 +20,8 @@ author = 'LAFVIN'
 extensions = [
     "myst_parser",
     "sphinx_copybutton",
-    "sphinxcontrib.video"
+    "sphinxcontrib.video",
+    "sphinxcontrib.images"
 ]
 
 pygments_lexers = {
@@ -50,3 +51,13 @@ html_theme_options = {
      'logo_only': True,
      'display_version': False,
  }
+
+ # 配置 sphinxcontrib-images
+images_config = {
+    # 'LightBox2' 是默认的后端，通常不用设置
+    'backend': 'LightBox2',
+    
+    # !!! 关键设置 !!!
+    # 强制让所有标准的 .. image:: 指令也启用 LightBox 效果
+    'override_image_directive': True,
+}

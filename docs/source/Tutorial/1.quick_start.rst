@@ -11,11 +11,11 @@ You need to prepare the following tools:
 - Memory card x1
 - Card reader x1
 
-After receiving the product, you can use the included type-C cable to power on by inserting it into the ESP32-C6 module's type-C port. Normally, the product will automatically light up and display the Onboard Info interface as shown below.
+After receiving the product, you can use any standard type-C data cable to power on by inserting it into the ESP32-C6 module's type-C port. Normally, the product will automatically light up and display the Onboard Info interface as shown below.
 
 .. image:: img/demo1-4.png
 
-If it does not light up automatically, you need to download the firmware and flashing tool according to this chapter.
+If it does not light up automatically (which happens only in very rare cases), you need to download the firmware and flashing tool according to this chapter.
 
 :ref:`Download Code <download_code>` 
 

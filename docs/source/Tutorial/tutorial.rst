@@ -6,4 +6,4 @@ Tutorial
 
    1.quick_start
    2.arduino
-   3.idf
+   3.esp-idf

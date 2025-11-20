@@ -1,9 +1,9 @@
-3. IDF
+3. ESP-IDF
 =================
 
 First, in this section, we need to configure the IDF development environment. You can follow the chapters below for installation.
 
-:ref:`install idf <idf_install>`
+:ref:`Install ESP-IDF <idf_install>`
 
 After installing VSCode and IDF as per the tutorial, We're ready to start configuring the project.
 
