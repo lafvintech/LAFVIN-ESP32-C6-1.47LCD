@@ -4,7 +4,7 @@ Component List
 .. toctree::
     :maxdepth: 1
 
-.. image:: Tutorial/img/LB006-list.jpg
+.. .. image:: Tutorial/img/LB006-list.jpg
 
 
 .. list-table:: 
