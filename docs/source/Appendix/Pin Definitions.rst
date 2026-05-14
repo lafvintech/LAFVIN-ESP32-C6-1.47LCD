@@ -56,7 +56,7 @@ Pin Definitions
      -
      -
      -
-     - RGB_IO
+     - RGB
    * - IO9
      -
      -
