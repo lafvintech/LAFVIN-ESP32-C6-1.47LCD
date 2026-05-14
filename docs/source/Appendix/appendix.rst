@@ -8,3 +8,4 @@ Appendix
    macos_upload
    arduino_ins
    idf_ins
+   Pin Definitions
