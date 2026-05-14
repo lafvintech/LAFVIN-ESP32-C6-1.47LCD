@@ -1,3 +1,5 @@
+.. _Pin_Definitions:
+
 Pin Definitions
 ================
 
